@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
  
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h5 {
-    font-family: Druk-text;
+     
     letter-spacing: 1px;
 
 }
@@ -82,33 +82,32 @@ p {
     font-size: 16px;
     text-transform: uppercase;
     background-color: #d25084; 
-    border-radius: 20px;
+    border-radius: 2rem;
     padding: 0.8rem 2rem;
     color: #fff;
     transition: all 0.3s ease;
-    font-weight: 600;
-
-
+     font-weight: 500; 
+     border: 1px solid #d25084; 
     &:hover {
         color: #fff;
-        background-color: #0197FE;
+        background-color: transparent; box-shadow: 2px 4px 10px rgba($color: #000, $alpha: .02);
     }
 }
 
 .theme_btn_outline {
     font-size: 16px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 2rem;
     text-transform: uppercase;
     padding: 0.8rem 2rem;
-    border: 1px solid #0197FE;
-    color: #0197FE;
+    border: 1px solid #d25084;
+    color: #fff;
     transition: all 0.3s ease;
-    font-weight: 600;
+    font-weight: 500;
 
     &:hover {
-        color: #fff;
-        background-color: #0197FE;
+        color: #fff;background-color: transparent; box-shadow: 2px 4px 10px rgba($color: #000, $alpha: .02);
+        background-color: #d25084;
     }
 }
 
@@ -193,6 +192,58 @@ header {
  
 
 .banner_cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 0;
+    .content {
+        h1{
+               font-size: 55px;
+               color: #d25084;
+               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(254,166,206,1) 51%, rgba(255,255,255,1) 80%);
+
+
+               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(250,210,228,1) 51%, rgba(255,255,255,1) 80%);
+
+               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(210,80,132,1) 51%, rgba(255,255,255,1) 80%);
+margin: 10px 0;
+font-weight: 700; 
+
+               -webkit-text-fill-color: transparent; 
+               -webkit-background-clip: text; 
+               
+        }
+        .theme_btn.charge {
+            padding: .3rem 1rem;
+            font-size: 14px;
+            font-weight: 500; 
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+            font-weight: 600; 
+            color: #fff;
+            span{
+                color: #d25084;
+            }
+
+        }
+
+.btn_groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+
+
+
+}
+     
+    }
     
 }
 
