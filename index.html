@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/plugin/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/plugin/owl-slider/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/plugin/owl-slider/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>coscm</title>
+</head> 
+
+<body  onclick="randombg()" id="random"   onload="randombg()">
+    
+     
+        <div></div>  
+     
+  
+        <header id="myHeader">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="" />
+                         <h1>UCHU NEKO</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars navbar-toggler-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mx-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TRAILER </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">JDM </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOW IT WORKS </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ROADMAP </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WHITEPAPER </a>
+                            </li> 
+                            
+                            
+                            <li class="nav-item d-lg-none d-block">
+                                <a class="nav-link" href="#">LAUNCH APP </a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex header_buttonGroups"> 
+                            <button   class="btn theme_btn  d-lg-block d-none" onclick="changeBg1()">LAUNCH APP</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+    
+
+     
+ 
+  <a href="assets/images/cat-pictures/cute-cat-studio (5).jpeg"></a>
+     
+
+    <script src="assets/plugin/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/plugin/jquery.js"></script>
+    <script src="assets/plugin/owl-slider/owl.carousel.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+ 
+ <script>function randombg(){
+    var random= Math.floor(Math.random() * 6) + 0;
+    var bigSize = ["url('assets/images/cat-pictures/cute-cat-studio (2).jpeg')",
+                   "url('assets/images/cat-pictures/cute-cat-studio (5).jpeg ')",
+                   "url('assets/images/cat-pictures/cute-cat-studio (1) copy.jpeg')",
+                   "url('assets/images/cat-pictures/cute-cat-studio (7).jpeg')",
+                   "url('assets/images/cat-pictures/cute-cat-studio (6).jpeg')",
+                   "url('assets/images/cat-pictures/cute-cat-studio (4).jpeg')"];
+    document.getElementById("random").style.backgroundImage=bigSize[random];
+
+
+    var should_play=true
+    window.onclick = () => {
+        if (should_play){
+            should_play=!should_play
+            let soundSource = "assets/cat-sound.mpeg";
+            let sound = new Audio(soundSource);
+            sound.play();
+            sound.onended = () => {
+                should_play=true
+            }
+        }
+
+    }
+  }
+ 
+ 
+
+
+</script>   
+</body>
+
+</html>
