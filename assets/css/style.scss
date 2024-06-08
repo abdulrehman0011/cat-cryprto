@@ -34,13 +34,17 @@
    
     
     /* ENHANCEMENT */
-     background-color: #d25084;
-    background-image: url('../images/cat-pictures/1.jpg'); 
-    background-position: center center;
-    background-size: cover;
+    
+    background-image: url('../images/logo.png'); 
+    background-position:    -100px ;
+    background-size: contain;
     background-repeat: no-repeat;  
     background-attachment: fixed;
     transition: all .3s ease;
+
+
+    background-color:  #FC55AB; 
+    background-color: linear-gradient(90deg, rgba(210,80,132,1) 23%, rgba(252,85,171,1) 51%, rgba(210,80,132,1) 80%);
   }
 
 
@@ -89,19 +93,19 @@ p {
      font-weight: 500; 
      border: 1px solid #d25084; 
     &:hover {
-        color: #fff;
-        background-color: transparent; box-shadow: 2px 4px 10px rgba($color: #000, $alpha: .02);
+        color: #d25084;
+        background-color:  #fff; box-shadow: 2px 4px 10px rgba($color: #000, $alpha: .02);
     }
 }
 
 .theme_btn_outline {
     font-size: 16px;
-    background-color: transparent;
+    background-color:  #fff;
     border-radius: 2rem;
     text-transform: uppercase;
     padding: 0.8rem 2rem;
     border: 1px solid #d25084;
-    color: #fff;
+    color: #d25084 ;
     transition: all 0.3s ease;
     font-weight: 500;
 
@@ -189,29 +193,39 @@ header {
 }
 
 
- 
+ .heading {
+    h2{
+        font-size: 45px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+
+    }
+ }
 
 .banner_cat{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
+   display: flex;
+   align-items: center;
+   min-height: 80vh;
+    
     padding: 70px 0;
     .content {
         h1{
-               font-size: 55px;
-               color: #d25084;
-               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(254,166,206,1) 51%, rgba(255,255,255,1) 80%);
+               font-size: 65px;
+               color: #fff;
+            //    background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(254,166,206,1) 51%, rgba(255,255,255,1) 80%);
 
 
-               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(250,210,228,1) 51%, rgba(255,255,255,1) 80%);
+            //    background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(250,210,228,1) 51%, rgba(255,255,255,1) 80%);
 
-               background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(210,80,132,1) 51%, rgba(255,255,255,1) 80%);
+            //    background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(210,80,132,1) 51%, rgba(255,255,255,1) 80%);
+
 margin: 10px 0;
 font-weight: 700; 
 
-               -webkit-text-fill-color: transparent; 
-               -webkit-background-clip: text; 
+            //    -webkit-text-fill-color: transparent; 
+            //    -webkit-background-clip: text; 
                
         }
         .theme_btn.charge {
@@ -233,7 +247,7 @@ font-weight: 700;
 
 .btn_groups {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
     gap: 10px;
     margin-top: 20px;
@@ -249,10 +263,75 @@ font-weight: 700;
 
 
  
- 
+ .REVOLUTIONARY{
+    .content {
+        h4{
+            font-size: 25px;
+            color: #fff;
+            
+
+        }
+        ul {
+            li{
+                font-size: 20px;
+            color: #fff;
+            padding: 3px 0;
+
+            &::before{
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                font-size: 20px;
+                margin-right: 5px;
+            }
+            }
+        }
+    }
+
+
+    .youtube_freme {
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+        }
+    }
+
+
+
+
+ }
  
 
-  
+  .chose_section {
+    .chose_boxes {
+        display: flex;
+        background-color: #d2508471;
+      
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 20px ;
+        .icons {
+            font-size: 35px;
+            color: #fff;
+            margin-right: 10px;
+
+        }
+
+        .content {
+            h4{
+                font-size: 24px;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 0.1px;
+            }
+            p{
+                font-size: 18px;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 0.1px; 
+            }
+        }
+    }
+  }
  
  
 @media screen and (max-width: 992px) {
@@ -393,6 +472,39 @@ header .header_buttonGroups .btn {
 header .navbar-expand-lg .navbar-collapse.show .theme_btn {
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #random{ 
+    background-position:   center   ;
+    background-size: cover;
+  
+  }
+
+
 }
 
  

@@ -1,5 +1,5 @@
 var typing=new Typed(".text", {
-    strings: ["", "protected", "trustless", "decentralized" ],
+    strings: ["", "The SPACE CAT", "(Achu Neko)"  ],
     typeSpeed: 100,
     backSpeed: 40,
     loop: true,
