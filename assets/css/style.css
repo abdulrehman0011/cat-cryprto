@@ -618,6 +618,10 @@ footer .links_location .social_links li a {
   color: #d25084;
 }
 
+.Exclusive_partner .chose_boxes p {
+  color: #fff;
+}
+
 @media screen and (max-width: 992px) {
   header .navbar-toggler {
     border: 1px solid #d25084;
@@ -679,6 +683,26 @@ footer .links_location .social_links li a {
   header .navbar-nav {
     padding: 0;
   }
+  #random {
+    background-position: center;
+    background-size: cover;
+  }
+  .youtube_videos .youtube_freme iframe {
+    height: 500px;
+  }
+  .banner_cat {
+    min-height: 70vh;
+  }
+  .Exclusive_partner .chose_boxes h2 {
+    font-size: 40px;
+  }
+  .Judge_section {
+    min-height: 70vh;
+  }
+  footer .footer_box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 767px) {
   header .navbar-expand-lg .navbar-collapse {
@@ -726,5 +750,70 @@ footer .links_location .social_links li a {
   #random {
     background-position: center;
     background-size: cover;
+  }
+  .timeline .timeline-item .timeline-panel {
+    left: 16px;
+    width: 100%;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-panel {
+    left: 16px;
+    width: 100%;
+  }
+  .timeline:before {
+    left: 10px;
+    top: 0;
+  }
+  .timeline .timeline-item .timeline-badge {
+    width: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    top: 10px;
+    left: -5px;
+  }
+  .timeline .timeline-body .DONEtext span, .timeline .timeline-body .DONEtext .done {
+    font-size: 14px;
+  }
+  .timeline .timeline-body h6 {
+    font-size: 13px;
+  }
+  .heading h2 {
+    font-size: 30px;
+  }
+  .theme_btn, .theme_btn_outline {
+    font-size: 14px;
+    padding: 0.6rem 1.5rem;
+  }
+  .Exclusive_partner .chose_boxes h2 {
+    font-size: 30px;
+    line-break: anywhere;
+  }
+  .Exclusive_partner .chose_boxes {
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  footer .footer_box, footer .footer_box {
+    flex-wrap: wrap;
+  }
+  footer .footer_box .links li {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  footer .footer_box .links li {
+    font-size: 12px;
+  }
+  footer .links_location {
+    display: block;
+  }
+  footer .links_location .social_links {
+    justify-content: end;
+  }
+  .youtube_videos .youtube_freme iframe {
+    height: 400px;
+  }
+  .banner_cat .content h1 {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
