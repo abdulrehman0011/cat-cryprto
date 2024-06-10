@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: kindergarten;
+  src: url(../font/kindergarten.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +27,7 @@
   min-height: 100vh;
   /* ENHANCEMENT */
   background: url("../images/logo.png");
-  background-position: -100px;
+  background-position: -100px 50px;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,6 +43,7 @@ h3,
 h4,
 h5,
 h5 {
+  font-family: kindergarten;
   letter-spacing: 1px;
 }
 
@@ -136,8 +141,8 @@ header .navbar-brand h1 {
   font-size: 25px;
   margin: 0;
   color: #fff;
+  font-family: kindergarten;
   margin-left: -5px;
-  font-family: "Dancing Script", cursive;
 }
 header .navbar-nav {
   background-color: rgba(210, 80, 132, 0.6);
@@ -163,6 +168,7 @@ header .header_buttonGroups .theme_btn_outline {
 
 .heading h2 {
   font-size: 45px;
+  font-weight: 700;
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
@@ -207,6 +213,8 @@ header .header_buttonGroups .theme_btn_outline {
 
 .REVOLUTIONARY .content h4 {
   font-size: 25px;
+ 
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 .REVOLUTIONARY .content ul li {
@@ -229,7 +237,7 @@ header .header_buttonGroups .theme_btn_outline {
 
 .chose_section .chose_boxes {
   display: flex;
-  background-color: rgba(210, 80, 132, 0.4431372549);
+  background-color: rgb(210 80 132 / 88%);
   border: 1px solid #fff;
   border-radius: 20px;
   width: 100%;
@@ -242,13 +250,13 @@ header .header_buttonGroups .theme_btn_outline {
   margin-right: 10px;
 }
 .chose_section .chose_boxes .content h4 {
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   font-weight: bold;
   letter-spacing: 0.1px;
 }
 .chose_section .chose_boxes .content p {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.1px;
@@ -266,9 +274,15 @@ header .header_buttonGroups .theme_btn_outline {
   text-align: left;
   margin-bottom: 5px;
 }
+.youtube_freme  video{
+  width: 100%;
+  height: 499px;
+  object-fit: fill;
 
+}
 .youtube_videos {
   position: relative;
+  margin-top: 50px;
 }
 .youtube_videos .youtube_freme {
   position: relative;
@@ -290,7 +304,7 @@ header .header_buttonGroups .theme_btn_outline {
 }
 
 .Exclusive_partner .chose_boxes {
-  background-color: rgba(210, 80, 132, 0.4431372549);
+  background-color: rgb(210 80 132 / 88%);
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 50px;
@@ -353,6 +367,12 @@ footer .links_location {
   padding: 20px 0;
   justify-content: space-between;
   align-items: center;
+}
+footer .links_location p{
+  font-size: 16px;
+  padding: 0 5px;
+  color: #fff;
+  margin: 0;
 }
 footer .links_location .links {
   display: flex;
@@ -594,7 +614,7 @@ footer .links_location .social_links li a {
 }
 
 .timeline .timeline-body h6 {
-  background-color: rgba(210, 80, 132, 0.4431372549);
+  background-color: rgb(210 80 132 / 88%);
   border: 1px solid #fff;
   color: #fff;
   display: inline-block;
@@ -623,7 +643,45 @@ footer .links_location .social_links li a {
 .Exclusive_partner .chose_boxes p {
   color: #fff;
 }
-
+.nekusection h4 {
+  font-size: 22px ;
+  font-weight: bold;
+  color: #eeeeee;
+  text-align: center;
+  
+}
+.images_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images_flex img  
+{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+.textes_Flex  {
+  margin-top: 100px;
+}
+.textes_Flex  li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: kindergarten;
+  margin-top: 10px ;
+  text-align: center;
+}
+.textes_Flex  li  span {
+  font-family: kindergarten  ;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+.textes_Flex  li  span.Taxes {
+  color: #000;
+}
 @media screen and (max-width: 992px) {
   header .navbar-toggler {
     border: 1px solid #d25084;
@@ -783,13 +841,14 @@ footer .links_location .social_links li a {
   }
   .heading h2 {
     font-size: 30px;
+     
   }
   .theme_btn, .theme_btn_outline {
     font-size: 14px;
     padding: 0.6rem 1.5rem;
   }
   .Exclusive_partner .chose_boxes h2 {
-    font-size: 30px;
+    font-size: 22px;
     line-break: anywhere;
   }
   .Exclusive_partner .chose_boxes {
@@ -817,5 +876,14 @@ footer .links_location .social_links li a {
   }
   .banner_cat .content h1 {
     font-size: 40px;
+  }
+  .images_flex {
+    flex-wrap: wrap;
+  }
+  .nekusection h4 {
+     font-size: 16px;        line-break: anywhere;
+  }
+  .textes_Flex li span {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
